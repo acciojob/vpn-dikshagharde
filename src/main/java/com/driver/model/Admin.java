@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "admin")
+@Table(name = "admins")
 public class Admin {
 
     @Id
@@ -14,7 +14,7 @@ public class Admin {
     private String username;
     private String password;
 
-    @OneToMany(mappedBy = "admi", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "admin", cascade = CascadeType.ALL)
     private List<ServiceProvider> serviceProviders;
 
     public Admin() {

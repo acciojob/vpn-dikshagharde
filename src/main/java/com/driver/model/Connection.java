@@ -11,7 +11,7 @@ public class Connection {
     private int id;
     @ManyToOne
     @JoinColumn
-    private User User;
+    private User user;
 
     @JoinColumn
     @ManyToOne
